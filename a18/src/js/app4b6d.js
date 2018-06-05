@@ -1056,12 +1056,14 @@ function animationStart() {
     .add(albumTitleAnimate(), 'loaderHide')
     .add(mosaicsAnimate());
 }
-
-App.$startBtn.on('click', function () {
+window.onload = function() {
+  animationStart();
+};
+/*App.$startBtn.on('click', function () {
     animationStart();
 });
 
-
+*/
 //# Sidebar open
 //
 //*
